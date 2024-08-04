@@ -1,0 +1,4 @@
+config-version: 2
+
+name: "graphme"
+require-dbt-version: ">=1.5.0"
