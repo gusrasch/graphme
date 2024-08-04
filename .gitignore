@@ -1,6 +1,7 @@
 .env
 
 /etl/.local_data
+/etl/__pycache__
 
 /etl/dbt/target/
 /etl/dbt/dbt_packages/
