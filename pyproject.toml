@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "graphme"
+version = "0.1.0"
+description = ""
+authors = ["Gus Rasch <gusrasch@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.32.3"
+duckdb = "^1.0.0"
+dbt-duckdb = "^1.8.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
