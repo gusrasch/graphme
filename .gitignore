@@ -1,3 +1,8 @@
 .env
 
 /etl/.local_data
+
+/etl/dbt/target/
+/etl/dbt/dbt_packages/
+/etl/dbt/logs/
+/etl/dbt/.user.yml
