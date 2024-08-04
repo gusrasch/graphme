@@ -79,8 +79,21 @@ def ingest_messages(group_id, page_size, max_pages) -> int:
     return pages_fetched
 
 def ingest_groups() -> None:
-    click.echo("not yet implemented")
-    return None
+    headers = {
+        "Content-Type": "application/json"
+    }
+
+    token = os.environ["GROUPME_TOKEN"]
+    
+    url = f"https://api.groupme.com/v3/groups?token={token}"
+    response = requests.get(url, headers=headers)
+    response.raise_for_status()
+    
+    groups = response.json()["response"]
+    filepath = os.path.join(".local_data", "json", "groups", "groups.json")
+    with open(filepath, "w") as f:
+        json.dump(groups, f, indent=2)
+
 
 
 @click.command()
