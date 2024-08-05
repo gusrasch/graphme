@@ -1,0 +1,12 @@
+version: 2
+
+sources:
+  - name: groupme
+    schema: raw
+    description: Data from groupme
+
+    tables:
+    - name: groups
+      description: One record per group
+      meta:
+        external_location: "read_json('../.local_data/json/groups/groups.json')"

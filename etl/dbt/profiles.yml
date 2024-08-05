@@ -1,8 +1,8 @@
 graphme:
+  target: dev
   outputs:
     dev:
       type: duckdb
       path: ../.local_data/duckdb/dev.duckdb
-      threads: 1
-
-  target: dev
+      extensions:
+        - json
