@@ -6,11 +6,17 @@ authors = ["Gus Rasch <gusrasch@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = ">=3.11,<3.13"
 requests = "^2.32.3"
 duckdb = "^1.0.0"
 dbt-duckdb = "^1.8.2"
 click = "^8.1.7"
+graphrag = "^0.2.0"
+networkx = "^3.3"
+jupyter = "^1.0.0"
+graphviz = "^0.20.3"
+pydot = "^3.0.1"
+neato = "^1.0.0"
 
 [build-system]
 requires = ["poetry-core"]
